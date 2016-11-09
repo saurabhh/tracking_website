@@ -12,9 +12,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'devise'
 gem 'bootstrap-sass', '~> 3.3.6'
+gem "validate_url"
+gem 'nokogiri', '~> 1.6', '>= 1.6.8'
 
 group :development, :test do
   gem 'byebug'
+  gem 'rubocop', '~> 0.45.0'
 end
 
 group :development do

@@ -1,0 +1,5 @@
+<% if @domain.errors.present? %>
+  App.ErrorHandler.add_errors("#domainForm", "<%= j(raw(@domain.errors.to_json)) %>");
+<% else %>
+  window.location.href = "<%= root_path %>"
+<% end %>
