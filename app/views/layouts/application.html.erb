@@ -10,7 +10,7 @@
   <div id="container">
     <%= render partial: 'shared/header' %>
   </div>
-  <% if current_user %>
+  <% if user_signed_in? %>
     <%= render "shared/sidebar" %>
   <% end %>
   <p class="notice"><%= notice %></p>
